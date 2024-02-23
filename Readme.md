@@ -15,16 +15,16 @@ Intended for usage in serverless applications that do not support cron triggers.
 2.  Set up `HTTP`-triggers with `POST` method in your API for functions you'd like to call.  
     Expect them to receive following payloads:
 
-        ```Typescript
-        type Payload = {
-            name: string;
-            cron: string;
-            createdAt: Date;
-            succesfullCalls: number;
-            lastSuccesfullCall: Date | null;
-            consecutiveFailures: number;
-        }
-        ```
+    ```Typescript
+    type Payload = {
+        name: string;
+        cron: string;
+        createdAt: Date;
+        succesfullCalls: number;
+        lastSuccesfullCall: Date | null;
+        consecutiveFailures: number;
+    }
+    ```
 
 3.  Create `task`(-s) using your endpoints
 
