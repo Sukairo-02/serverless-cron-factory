@@ -174,7 +174,3 @@ Intended for usage in serverless applications that do not support cron triggers.
         ```
 
     -   `DELETE` - delete task
-
-```
-
-```
