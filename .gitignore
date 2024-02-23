@@ -1,0 +1,9 @@
+dist
+node_modules
+/src/test/output.pdf
+bun.lockb
+package-lock.json
+fly.toml
+.env.*
+build
+drizzle.config.ts

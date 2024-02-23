@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"baseUrl": "src",
+		"paths": {
+			"@Controllers/*": ["Controllers/*"],
+			"@Services/*": ["Services/*"],
+			"@Middleware/*": ["Middleware/*"],
+			"@Util/*": ["Util/*"],
+			"@Database/*": ["Database/*"],
+			"@Globals/*": ["Globals/*"],
+			"@Globals": ["Globals/values.ts"],
+			"@Repos/*": ["Repositories/*"]
+		}
+	}
+}

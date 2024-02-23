@@ -1,0 +1,8 @@
+dist
+node_modules
+fly.toml
+bun.lockb
+package-lock.json
+.gitignore
+Readme.md
+build

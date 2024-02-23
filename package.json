@@ -1,0 +1,27 @@
+{
+	"name": "serverless-cron-factory",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.ts",
+	"scripts": {
+		"start": "bun --bun run src/index.ts",
+		"deploy": "npm run generate-sql && fly deploy",
+		"generate-sql": "drizzle-kit generate:sqlite"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@hono/zod-validator": "^0.1.11",
+		"@libsql/client": "^0.5.1",
+		"@types/node-cron": "^3.0.11",
+		"drizzle-orm": "^0.29.3",
+		"hono": "^4.0.5",
+		"node-cron": "^3.0.3",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"bun-types": "^1.0.28",
+		"drizzle-kit": "^0.20.14",
+		"typescript": "^5.3.3"
+	}
+}

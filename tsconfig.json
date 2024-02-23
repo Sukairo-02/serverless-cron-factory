@@ -1,0 +1,18 @@
+{
+	"extends": "./tsconfig.paths.json",
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+
+		"esModuleInterop": true,
+		"strict": true,
+		"noErrorTruncation": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		"lib": ["esnext"]
+	},
+	"exclude": ["microservices/**/*", "migrations/**/*", "/**/node_modules/**/*"],
+	"include": ["src/**/*", "drizzle.config.ts"]
+}
