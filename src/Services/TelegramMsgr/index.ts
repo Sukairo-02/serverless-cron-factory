@@ -9,6 +9,7 @@ export class TelegramMsgr {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify({
+					parse_mode: 'HTML',
 					chat_id: recepient,
 					text: message
 				})

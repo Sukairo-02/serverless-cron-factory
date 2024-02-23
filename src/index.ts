@@ -26,7 +26,7 @@ new StackController(app, '/stack')
 app.post('/testhook', async (c) => {
 	await TelegramMsgr.sendMessage(
 		'-4129652962',
-		`Cron triggered, payload:\n<code>${JSON.stringify(await c.req.json())}</code>`
+		`Cron triggered, payload:\n<code>${JSON.stringify(await c.req.json(), undefined, 2)}</code>`
 	)
 
 	return c.text('OK')
